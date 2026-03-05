@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kanghuru - Educación Canina | Pastoreo y Rehabilitación Conductual</title>
+  <meta name="description" content="Especialistas en educación canina, pastoreo y rehabilitación conductual. Ayudamos a tu perro a encontrar su equilibrio respetando su naturaleza.">
+  <meta name="keywords" content="educación canina, pastoreo, Border Collie, rehabilitación canina, adiestramiento perros, conducta canina">
+  <link rel="icon" href="kanghuru-logo.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: {
+              primary: '#5B3E96',
+              light: '#7B5EAF',
+              dark: '#3D2C5E',
+              darker: '#4A3280'
+            },
+            beige: {
+              light: '#F5F0E8',
+              medium: '#EDE5D8',
+              dark: '#E8DFD0'
+            },
+            brown: {
+              light: '#8B7355',
+              medium: '#6B5B4F',
+              border: '#D4C4B0'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .bg-purple-primary { background-color: #5B3E96; }
+    .bg-purple-light { background-color: #7B5EAF; }
+    .bg-purple-dark { background-color: #3D2C5E; }
+    .bg-purple-darker { background-color: #4A3280; }
+    .bg-beige-light { background-color: #F5F0E8; }
+    .bg-beige-medium { background-color: #EDE5D8; }
+    .bg-beige-dark { background-color: #E8DFD0; }
+    .text-purple-primary { color: #5B3E96; }
+    .text-purple-light { color: #7B5EAF; }
+    .text-purple-dark { color: #3D2C5E; }
+    .text-brown-light { color: #8B7355; }
+    .text-brown-medium { color: #6B5B4F; }
+    .border-brown-border { border-color: #D4C4B0; }
+    .hover\:bg-purple-light:hover { background-color: #7B5EAF; }
+    .hover\:bg-beige-medium:hover { background-color: #EDE5D8; }
+    .hover\:text-purple-light:hover { color: #7B5EAF; }
+  </style>
+</head>
+<body class="min-h-screen bg-beige-light">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 md:h-20">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 md:w-12 md:h-12 relative">
+            <img src="kanghuru-logo.png" alt="Kanghuru Logo" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <h1 class="text-lg md:text-xl font-bold text-purple-primary tracking-wide">KANGHURU</h1>
+            <p class="text-xs text-brown-light hidden sm:block">Educación Canina</p>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#inicio" class="text-purple-primary hover:text-purple-light transition-colors font-medium">Inicio</a>
+          <a href="#servicios" class="text-purple-primary hover:text-purple-light transition-colors font-medium">Servicios</a>
+          <a href="#beneficios" class="text-purple-primary hover:text-purple-light transition-colors font-medium">Beneficios</a>
+          <a href="#contacto" class="bg-purple-primary text-white px-6 py-2.5 rounded-full hover:bg-purple-light transition-colors font-medium">Contacto</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden p-2 text-purple-primary">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-100">
+      <div class="px-4 py-4 space-y-3">
+        <a href="#inicio" class="block w-full text-left py-2 text-purple-primary hover:text-purple-light font-medium">Inicio</a>
+        <a href="#servicios" class="block w-full text-left py-2 text-purple-primary hover:text-purple-light font-medium">Servicios</a>
+        <a href="#beneficios" class="block w-full text-left py-2 text-purple-primary hover:text-purple-light font-medium">Beneficios</a>
+        <a href="#contacto" class="block w-full bg-purple-primary text-white px-6 py-2.5 rounded-full text-center hover:bg-purple-light transition-colors font-medium">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="pt-20 md:pt-24 min-h-screen flex items-center bg-gradient-to-br from-beige-light via-beige-medium to-beige-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+      <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <!-- Left Content -->
+        <div class="order-2 lg:order-1">
+          <div class="inline-block bg-purple-primary/10 text-purple-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
+            Educación Canina Profesional
+          </div>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-purple-dark leading-tight mb-6">
+            Déjale conocerse a sí mismo
+          </h2>
+          <p class="text-lg md:text-xl text-brown-medium mb-8 leading-relaxed">
+            El equilibrio de tu perro empieza por respetar su naturaleza. Especialistas en pastoreo y rehabilitación conductual.
+          </p>
+          
+          <!-- Problem List -->
+          <div class="bg-white/60 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/50">
+            <p class="text-purple-primary font-semibold mb-4">¿Tu perro muestra...?</p>
+            <div class="grid sm:grid-cols-2 gap-3">
+              <div class="flex items-center gap-2 text-brown-medium">
+                <div class="w-2 h-2 rounded-full bg-purple-primary"></div>
+                Ansiedad
+              </div>
+              <div class="flex items-center gap-2 text-brown-medium">
+                <div class="w-2 h-2 rounded-full bg-purple-primary"></div>
+                Hiperactividad
+              </div>
+              <div class="flex items-center gap-2 text-brown-medium">
+                <div class="w-2 h-2 rounded-full bg-purple-primary"></div>
+                Conductas obsesivas
+              </div>
+              <div class="flex items-center gap-2 text-brown-medium">
+                <div class="w-2 h-2 rounded-full bg-purple-primary"></div>
+                Exceso de energía sin canalizar
+              </div>
+            </div>
+            <p class="text-sm text-brown-light mt-4 italic">
+              Estos comportamientos enfocados de la manera adecuada tienen solución
+            </p>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#contacto" class="bg-purple-primary text-white px-8 py-4 rounded-full hover:bg-purple-light transition-all hover:shadow-lg hover:shadow-purple-400/20 font-semibold text-lg text-center">
+              Solicitar Información
+            </a>
+            <a href="#servicios" class="border-2 border-purple-primary text-purple-primary px-8 py-4 rounded-full hover:bg-purple-primary hover:text-white transition-all font-semibold text-lg text-center">
+              Ver Servicios
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-400/20">
+            <img src="hero-dog.png" alt="Border Collie pastoreando" class="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-purple-400/30 to-transparent"></div>
+          </div>
+          <!-- Floating Card -->
+          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl border border-gray-100 hidden md:block">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-purple-primary/10 rounded-full flex items-center justify-center">
+                <i data-lucide="heart" class="text-purple-primary w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="font-bold text-purple-dark">+100 perros</p>
+                <p class="text-sm text-brown-light">rehabilitados</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative">
+          <div class="rounded-3xl overflow-hidden shadow-xl">
+            <img src="about-dog.png" alt="Perro feliz" class="w-full h-[350px] md:h-[450px] object-cover">
+          </div>
+          <div class="absolute -top-4 -right-4 bg-purple-primary text-white p-4 rounded-2xl shadow-lg hidden md:block">
+            <p class="text-2xl font-bold">¡Nunca es tarde!</p>
+            <p class="text-sm opacity-90">La edad no importa</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-purple-dark mb-6">
+            Un Border Collie no es solo un perro activo
+          </h3>
+          <p class="text-brown-medium text-lg leading-relaxed mb-6">
+            Es una mente diseñada para trabajar, decidir y cooperar. La vida en entornos urbanos y el exceso de estímulos diarios no solo los desnaturaliza, sino que desestabiliza su equilibrio emocional.
+          </p>
+          <div class="bg-beige-light rounded-2xl p-6 mb-6">
+            <p class="text-purple-dark font-semibold mb-3">El pastoreo es mucho más que ejercicio:</p>
+            <ul class="space-y-2 text-brown-medium">
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="text-purple-primary w-5 h-5 flex-shrink-0"></i>
+                Es identidad
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="text-purple-primary w-5 h-5 flex-shrink-0"></i>
+                Es calma mental
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="text-purple-primary w-5 h-5 flex-shrink-0"></i>
+                Es conexión
+              </li>
+              <li class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="text-purple-primary w-5 h-5 flex-shrink-0"></i>
+                Es permitirles realizar la actividad que les resulta más gratificante
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="servicios" class="py-16 md:py-24 bg-gradient-to-b from-purple-primary to-purple-darker">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">Nuestros Servicios</h3>
+        <p class="text-white/80 text-lg max-w-2xl mx-auto">
+          Programas especializados para el bienestar y desarrollo de tu perro
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <!-- Service 1 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 hover:bg-white/15 transition-all group">
+          <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="dog" class="text-white w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-white mb-3">Iniciación al Pastoreo</h4>
+          <p class="text-white/80 leading-relaxed">
+            Para personas y perros que viven en ciudad y quieren descubrir su instinto natural de forma guiada y respetuosa.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 hover:bg-white/15 transition-all group">
+          <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="brain" class="text-white w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-white mb-3">Clases Adaptadas</h4>
+          <p class="text-white/80 leading-relaxed mb-4">
+            Sesiones progresivas adaptadas a todas las edades, sin experiencia previa necesaria, enfocadas en el bienestar emocional.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full">Sin experiencia previa</span>
+            <span class="bg-white/20 text-white text-sm px-3 py-1 rounded-full">Bienestar emocional</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 hover:bg-white/15 transition-all group">
+          <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="heart" class="text-white w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-white mb-3">Rehabilitación de Perros Pastores</h4>
+          <p class="text-white/80 leading-relaxed">
+            Trabajo específico con ovejas para perros con ansiedad, bloqueo, obsesiones o desajustes conductuales.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 hover:bg-white/15 transition-all group">
+          <div class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+            <i data-lucide="sparkles" class="text-white w-7 h-7"></i>
+          </div>
+          <h4 class="text-xl md:text-2xl font-bold text-white mb-3">Control de Conductas Predatorias</h4>
+          <p class="text-white/80 leading-relaxed">
+            Programa especializado para todas las razas. Gestiona y redirige los instintos naturales de manera positiva y efectiva.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="beneficios" class="py-16 md:py-24 bg-beige-light">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h3 class="text-3xl md:text-4xl font-bold text-purple-dark mb-4">Beneficios del Pastoreo</h3>
+        <p class="text-brown-medium text-lg max-w-2xl mx-auto">
+          El trabajo de pastoreo ofrece múltiples beneficios para el equilibrio de tu perro
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          <div class="text-4xl mb-4">🤝</div>
+          <h4 class="text-lg font-bold text-purple-dark mb-2">Fortalece el vínculo</h4>
+          <p class="text-brown-medium text-sm">Mejora la comunicación y conexión entre tú y tu perro</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          <div class="text-4xl mb-4">🐾</div>
+          <h4 class="text-lg font-bold text-purple-dark mb-2">Reconecta con su instinto</h4>
+          <p class="text-brown-medium text-sm">Permite expresar su naturaleza y propósito natural</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          <div class="text-4xl mb-4">😌</div>
+          <h4 class="text-lg font-bold text-purple-dark mb-2">Reduce la ansiedad</h4>
+          <p class="text-brown-medium text-sm">Disminuye conductas desajustadas y el estrés acumulado</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          <div class="text-4xl mb-4">🧠</div>
+          <h4 class="text-lg font-bold text-purple-dark mb-2">Mejora el equilibrio</h4>
+          <p class="text-brown-medium text-sm">Aumenta concentración, autocontrol y salud mental</p>
+        </div>
+      </div>
+
+      <!-- Key Points -->
+      <div class="mt-16 bg-white rounded-3xl p-8 md:p-12 shadow-xl">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-purple-primary">01</span>
+            </div>
+            <h4 class="font-bold text-purple-dark mb-2">El pastoreo les permite expresar su naturaleza y sentirse realizados</h4>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-purple-primary">02</span>
+            </div>
+            <h4 class="font-bold text-purple-dark mb-2">La estimulación mental sostiene el equilibrio emocional de las razas de trabajo</h4>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-purple-primary">03</span>
+            </div>
+            <h4 class="font-bold text-purple-dark mb-2">Seguir su instinto reduce estrés, ansiedad y desajustes de conducta</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-3xl md:text-4xl font-bold text-purple-dark mb-6">
+            ¿Listo para empezar?
+          </h3>
+          <p class="text-brown-medium text-lg mb-8">
+            Llámame o escríbeme para más información. Estoy aquí para ayudarte a encontrar el equilibrio que tu perro necesita.
+          </p>
+
+          <div class="space-y-6">
+            <a href="tel:620701983" class="flex items-center gap-4 bg-beige-light rounded-2xl p-5 hover:bg-beige-medium transition-colors group">
+              <div class="w-14 h-14 bg-purple-primary rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="phone" class="text-white w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-sm text-brown-light">Llámanos</p>
+                <p class="text-xl font-bold text-purple-dark">620 701 983</p>
+              </div>
+            </a>
+
+            <a href="mailto:info@kanghuru.es" class="flex items-center gap-4 bg-beige-light rounded-2xl p-5 hover:bg-beige-medium transition-colors group">
+              <div class="w-14 h-14 bg-purple-primary rounded-xl flex items-center justify-center group-hover:scale-105 transition-transform">
+                <i data-lucide="mail" class="text-white w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-sm text-brown-light">Escríbenos</p>
+                <p class="text-xl font-bold text-purple-dark">info@kanghuru.es</p>
+              </div>
+            </a>
+
+            <div class="flex items-center gap-4 bg-beige-light rounded-2xl p-5">
+              <div class="w-14 h-14 bg-purple-primary rounded-xl flex items-center justify-center">
+                <i data-lucide="map-pin" class="text-white w-6 h-6"></i>
+              </div>
+              <div>
+                <p class="text-sm text-brown-light">Ubicación</p>
+                <p class="text-xl font-bold text-purple-dark">España</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="bg-beige-light rounded-3xl p-6 md:p-8">
+          <h4 class="text-xl font-bold text-purple-dark mb-6">Envíanos un mensaje</h4>
+          <form class="space-y-4" action="#" method="POST">
+            <div>
+              <label class="block text-sm font-medium text-brown-medium mb-2">Nombre</label>
+              <input type="text" class="w-full px-4 py-3 rounded-xl border border-brown-border focus:border-purple-primary focus:ring-2 focus:ring-purple-400/20 outline-none transition-all bg-white" placeholder="Tu nombre">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-brown-medium mb-2">Teléfono</label>
+              <input type="tel" class="w-full px-4 py-3 rounded-xl border border-brown-border focus:border-purple-primary focus:ring-2 focus:ring-purple-400/20 outline-none transition-all bg-white" placeholder="Tu teléfono">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-brown-medium mb-2">Mensaje</label>
+              <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-brown-border focus:border-purple-primary focus:ring-2 focus:ring-purple-400/20 outline-none transition-all bg-white resize-none" placeholder="Cuéntanos sobre tu perro y qué necesitas..."></textarea>
+            </div>
+            <button type="submit" class="w-full bg-purple-primary text-white py-4 rounded-xl hover:bg-purple-light transition-colors font-semibold text-lg">
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-dark py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 relative">
+            <img src="kanghuru-logo.png" alt="Kanghuru Logo" class="w-full h-full object-contain">
+          </div>
+          <div>
+            <h4 class="text-lg font-bold text-white">KANGHURU</h4>
+            <p class="text-xs text-white/70">Educación Canina</p>
+          </div>
+        </div>
+        <p class="text-white/70 text-sm text-center">
+          © 2025 Kanghuru Educación Canina. Todos los derechos reservados.
+        </p>
+        <p class="text-white/70 text-sm italic">
+          "Déjale conocerse a sí mismo"
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking a link
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
