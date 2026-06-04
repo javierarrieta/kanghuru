@@ -5,16 +5,14 @@ FROM nginx:${NGINX_VERSION}
 
 # Security: install security updates
 RUN apk update && \
-    apk upgrade --no-cache --no-install-recommends && \
+    apk upgrade --no-cache && \
     rm -rf /var/cache/apk/*
 
 # Security: copy only necessary files
 COPY ./static /usr/share/nginx/html
 
 # Security: drop root privileges
-RUN addgroup -g 101 -S nginx && \
-    adduser -u 101 -S nginx -G nginx -h /usr/share/nginx/html -s /sbin/nologin && \
-    chown -R nginx:nginx /usr/share/nginx/html /var/cache/nginx /var/log/nginx /var/lib/nginx
+RUN chown -R nginx:nginx /usr/share/nginx/html
 
 USER nginx
 

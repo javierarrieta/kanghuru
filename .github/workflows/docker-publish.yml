@@ -40,4 +40,4 @@ jobs:
           push: ${{ github.event_name == 'push' }}
           tags: ${{ github.event_name == 'push' && format('ghcr.io/{0}:{1},ghcr.io/{0}:latest', github.repository, steps.version.outputs.version) || '' }}
           cache-from: type=registry,ref=ghcr.io/${{ github.repository }}:buildcache
-          cache-to: type=registry,ref=ghcr.io/${{ github.repository }}:buildcache,mode=max
+          cache-to: ${{ github.event_name == 'push' && format('type=registry,ref=ghcr.io/{0}:buildcache,mode=max', github.repository) || 'type=inline' }}
