@@ -14,8 +14,6 @@ COPY ./static /usr/share/nginx/html
 # Security: drop root privileges
 RUN chown -R nginx:nginx /usr/share/nginx/html
 
-USER nginx
-
 EXPOSE 80
 
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
