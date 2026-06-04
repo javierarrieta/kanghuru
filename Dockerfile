@@ -12,7 +12,7 @@ RUN apk update && \
 COPY ./static /usr/share/nginx/html
 
 # Security: drop root privileges
-RUN chown -R nginx:nginx /usr/share/nginx/html /var/cache/nginx /var/log/nginx /var/lib/nginx
+RUN chown -R nginx:nginx /usr/share/nginx/html
 
 USER nginx
 
