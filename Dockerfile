@@ -5,7 +5,7 @@ FROM nginx:${NGINX_VERSION}
 
 # Security: install security updates
 RUN apk update && \
-    apk upgrade --no-cache --no-install-recommends && \
+    apk upgrade --no-cache && \
     rm -rf /var/cache/apk/*
 
 # Security: copy only necessary files
