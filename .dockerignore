@@ -1,0 +1,26 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose*.yml
+.dockerignore
+
+# Documentation
+README.md
+LICENSE
+*.md
+
+# IDE / Editor
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Static assets not needed in build (they're copied separately)
+# (we only need static/index.html and the images in the Dockerfile COPY)
