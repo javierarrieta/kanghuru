@@ -12,9 +12,7 @@ RUN apk update && \
 COPY ./static /usr/share/nginx/html
 
 # Security: drop root privileges
-RUN addgroup -g 101 -S nginx && \
-    adduser -u 101 -S nginx -G nginx -h /usr/share/nginx/html -s /sbin/nologin && \
-    chown -R nginx:nginx /usr/share/nginx/html /var/cache/nginx /var/log/nginx /var/lib/nginx
+RUN chown -R nginx:nginx /usr/share/nginx/html /var/cache/nginx /var/log/nginx /var/lib/nginx
 
 USER nginx
 
